@@ -62,7 +62,7 @@ def webhook():
         send_typing(phone)
 
         # Router decide qué modelo usa y devuelve la respuesta
-        reply = route_message(phone, user_text)
+        reply = "¡Hola! Estoy despertando. Prueba exitosa."
         send_text_message(phone, reply)
 
     except (KeyError, IndexError) as e:
